@@ -5,7 +5,7 @@ Pytorch Implementation for pneumonia detection and localization using Faster R-C
 The code is modified from [chenyuntc](https://github.com/chenyuntc/simple-faster-rcnn-pytorch)'s simple-faster-rcnn-pytorch.
 I replaced the RoIPooling module with RoIAlign and some other minor changes are implemented to train the pneumonia dataset.
 Some prediction demo:
-![image1]()
+![image1](https://github.com/limingwu8/Pneumonia-Detection/blob/master/images/TP.png)
 
 ## Prerequisites
 * Linux or OSX with NVIDIA GPU (Memory > 3.5G)
@@ -48,7 +48,7 @@ for Faster R-CNN during training. Thus, these images are discarded during traini
 ## Evaluation
 The training loss on the region proposal network and the Faster R-CNN core network is shown below. The results are evaluated on the mean average precision at the different intersection over union (IoU) thresholds.
 Please refer to [RSNA Pneumonia Detection Challenge](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge#evaluation) for the details.
-![image3]()
+![image3](https://github.com/limingwu8/Pneumonia-Detection/blob/master/images/evaluation.png)
 
 ## Failure Cases
 The dataset contains three categories of subjects, normal, pneumonia, and abnormal(cancer or other diseases) but only provides the bounding box for pneumonia images. However, the features of pneumonia and abnormal(cancer or other diseases)
