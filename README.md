@@ -66,7 +66,7 @@ are pretty similar, which caused the failure to distinguish pneumonia and abnorm
 
 ## Acknowledgement
 The code originates from [chenyuntc](https://github.com/chenyuntc/simple-faster-rcnn-pytorch)'s simple-faster-rcnn-pytorch except some minor changes:
-* Replaced the RoIPooling module with RoIAlign
+* Replaced the RoIPooling module with RoIAlign, which is from longcw's [RoIAlign.pytorch](https://github.com/longcw/RoIAlign.pytorch)
 * The convolution layers are modified to support binary classification
 * Tried ResNet as the feature extraction network
 * Tried histogram equalization during data preparation
